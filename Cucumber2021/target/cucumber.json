@@ -1,0 +1,213 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-01T13:35:05.853Z",
+        "line": 11,
+        "name": "Add two numbers",
+        "description": "",
+        "id": "addition;add-two-numbers;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2006800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user have 2.0 and 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2.0",
+                  "offset": 10
+                },
+                {
+                  "val": "3",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_have_and(java.lang.Double,java.lang.Double)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 647600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user adds the numbers",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.user_adds_the_numbers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.AssertionFailedError: expected:\u003c5.0\u003e but was:\u003c4.0\u003e\r\n\tat junit.framework.Assert.fail(Assert.java:57)\r\n\tat junit.framework.Assert.failNotEquals(Assert.java:329)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:78)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:86)\r\n\tat stepDefinitions.StepDefinition.user_gets_sum_as(StepDefinition.java:25)\r\n\tat ✽.user gets sum as 4(file:///C:/Users/Tringapps/eclipse-workspace/NBCCucumber/src/test/java/features/Test.feature:5)\r\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "user gets sum as 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_gets_sum_as(java.lang.Double)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user print \"Success\" as output",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Success\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_print_as_output(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the result output is",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.the_result_output_is(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "2.0",
+                  "3",
+                  "4"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-01T13:35:05.911Z",
+        "line": 12,
+        "name": "Add two numbers",
+        "description": "",
+        "id": "addition;add-two-numbers;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user have 10 and 12.0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 10
+                },
+                {
+                  "val": "12.0",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_have_and(java.lang.Double,java.lang.Double)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user adds the numbers",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.user_adds_the_numbers()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 925700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user gets sum as 22",
+            "match": {
+              "arguments": [
+                {
+                  "val": "22",
+                  "offset": 17
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_gets_sum_as(java.lang.Double)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user print \"Success\" as output",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Success\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.StepDefinition.user_print_as_output(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the result output is",
+            "match": {
+              "location": "stepDefinitions.StepDefinition.the_result_output_is(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "10",
+                  "12.0",
+                  "22"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Addition",
+    "description": "",
+    "id": "addition",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Test.feature",
+    "tags": []
+  }
+]
